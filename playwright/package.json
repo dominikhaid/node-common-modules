@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.32.2",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.26.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "eslint-plugin-xo": "^1.0.0",
+    "moment": "^2.29.4",
+    "node-cron": "^3.0.2",
+    "playwright": "^1.32.2",
+    "typescript": "^5.0.3",
+    "xo": "^0.53.1"
+  },
+  "typings": "./node_modules/moment/moment.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts --ext .tsx --ext .js --ext .jsx",
+    "format": "prettier --config .prettierrc.json --write tests/**/*.{js,ts}  --write utils/**/*.{js,ts}",
+    "cron-watch-musikrechere": "set CRON_CMD=npx playwright test cronExample.spec.ts& set CRON_EXP=*/10 * * * *& node ./utils/cron.js"
+  },
+  "type": "module"
+}

@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "typeRoots": [],
+    "outDir": "build",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "sourceMap": true,
+    "listFiles": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "removeComments" : true
+    //"noEmit": true,
+  },
+  "include": [
+    "tests/**/*.ts",
+    "tests/**/*.js",
+    "utils/**/*.ts",
+    "utils/**/*.js",
+    "types/common/main.d.ts",
+    "types/common/interfaces.d.ts",
+    "node_modules/moment/ts3.1-typings/moment.d.ts",
+    "node_modules/@playwright/test/index.d.ts",
+  ],
+  "exclude": [
+    "/log",
+    ".git",
+    "/out",
+    "/static",
+    "/build",
+    "/coverage",
+    "/dist",
+    "/lib"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "eslint-import-resolver-typescript",
+        "jsx-a11y",
+        "import",
+        "prettier"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jsx-a11y/recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "alias": {
+                "map": [],
+                "extensions": [
+                    ".ts",
+                    ".tsx",
+                    ".js",
+                    ".jsx",
+                    ".json",
+                    ".css",
+                    ".less",
+                    ".scss"
+                ]
+            }
+        },
+    },
+    "parserOptions": {
+        "requireConfigFile": false,
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+    },
+    "env": {
+        "serviceworker": true,
+        "worker": true,
+        "commonjs": true,
+        "jquery": true,
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "rules": {
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
+        "import/prefer-default-export": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "linebreak-style": ["warn", "unix"],
+        "no-console": 1,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "js": "never"
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "usePrettierrc": true
+            }
+        ],
+        "jsx-a11y/no-onchange": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ]
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true
+    },
+    "ignorePatterns": [
+        "**/node_modules/*",
+        "node_modules"
+    ]
+}
