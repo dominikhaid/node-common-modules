@@ -1,0 +1,9 @@
+{
+  "presets": [
+    [
+      "node"
+    ]
+  ],
+  "ignore": ["public/icons", "public/images", "node_modules"],
+  "plugins": ["@babel/plugin-transform-runtime"]
+}

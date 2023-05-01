@@ -1,0 +1,23 @@
+.whatsapp path:last-child {
+  @apply opacity-100 fill-current text-secondary;
+}
+
+.whatsapp path:first-child {
+  @apply fill-current opacity-60 text-primary;
+}
+
+.duotone path:last-child {
+  @apply opacity-100 fill-current text-secondary-darkest;
+}
+
+.duotone path:first-child {
+  @apply fill-current opacity-60 text-primary;
+}
+
+.primary path {
+  @apply fill-current opacity-60 text-primary;
+}
+
+.secondary path {
+  @apply opacity-100 fill-current text-secondary;
+}

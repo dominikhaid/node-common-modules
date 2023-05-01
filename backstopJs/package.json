@@ -1,0 +1,24 @@
+{
+  "name": "backstopjs-course-english",
+  "version": "1.0.0",
+  "description": "Project for the course of BackstopJS from the Talking About Testing online school.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx backstop test",
+    "visual:approve":"npx backstop approve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/backstopjs-course-english.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsf82/backstopjs-course-english/issues"
+  },
+  "homepage": "https://github.com/wlsf82/backstopjs-course-english#readme",
+  "devDependencies": {
+    "backstopjs": "^6.0.4"
+  }
+}

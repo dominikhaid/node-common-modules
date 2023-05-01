@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./server.ts",
+    "types": [
+      "node",
+      "jest",
+      "@types/express",
+      "@testing-library/jest-dom",
+      "@types/testing-library__jest-dom"
+    ],
+    "lib": ["dom", "dom.iterable", "es2015"],
+    "strictFunctionTypes": true,
+    "listFiles": false,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./"
+  },
+  "include": [
+    "global.node.d.ts",
+    "./server.ts",
+    "**/src/server/*.ts",
+    "**/src/server/**/*.ts"
+  ],
+  "exclude": [
+    "./src/public",
+    "./src/server/webpack",
+    "node_modules",
+    "__screenshots__",
+    "log",
+    "uploads",
+    ".next",
+    ".git",
+    "out",
+    "static",
+    "coverage",
+    "dist",
+    "jest",
+    "cypress",
+    "stroybook-static",
+    "build"
+  ]
+}

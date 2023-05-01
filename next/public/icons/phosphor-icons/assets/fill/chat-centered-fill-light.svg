@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <defs>
+        <clipPath id="chat-clip">
+            <path d="M232,56V184a16.01853,16.01853,0,0,1-16.001,16H156.5293l-14.80957,24.68262a16.00024,16.00024,0,0,1-27.43946,0L99.46973,200,40,199.999a16.01833,16.01833,0,0,1-16-16V56A16.01833,16.01833,0,0,1,40,40H216A16.01833,16.01833,0,0,1,232,56Z"/>
+        </clipPath>
+    </defs>
+
+    <defs>
+        <filter id="light">
+            <feSpecularLighting result="spec4" in="blur4" specularExponent="40" lighting-color="#cccccc">
+                <!--Light source effect-->
+                <fePointLight x="75" y="100" z="120">
+                    <!--Lighting Animation-->
+                    <animate attributeName="y" values="100;130;100" dur="10s" repeatCount="indefinite" />
+                    <animate attributeName="x" values="100;130;100" dur="10s" repeatCount="indefinite" />
+                </fePointLight>
+            </feSpecularLighting>
+        </filter>
+    </defs>
+    <path d="M232,56V184a16.01853,16.01853,0,0,1-16.001,16H156.5293l-14.80957,24.68262a16.00024,16.00024,0,0,1-27.43946,0L99.46973,200,40,199.999a16.01833,16.01833,0,0,1-16-16V56A16.01833,16.01833,0,0,1,40,40H216A16.01833,16.01833,0,0,1,232,56Z"/>
+    <path clip-path="url(#chat-clip)" filter="url(#light)" d="M232,56V184a16.01853,16.01853,0,0,1-16.001,16H156.5293l-14.80957,24.68262a16.00024,16.00024,0,0,1-27.43946,0L99.46973,200,40,199.999a16.01833,16.01833,0,0,1-16-16V56A16.01833,16.01833,0,0,1,40,40H216A16.01833,16.01833,0,0,1,232,56Z"/>
+</svg>
+
+
